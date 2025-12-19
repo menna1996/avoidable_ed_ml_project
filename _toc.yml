@@ -1,0 +1,11 @@
+# jupyterbook/_toc.yml
+format: jb-book
+root: index
+
+chapters:
+  - file: resume
+  - file: project_overview
+  - file: experiments
+  - file: code_and_repo
+  - file: deployment
+  - file: video

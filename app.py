@@ -135,4 +135,4 @@ if st.button("🔍 Predict Avoidable ED Visit"):
                 st.info("ℹ️ Likely Non‑Avoidable ED Visit")
 
     except Exception as e:
-        st.error("❌ Error contacting prediction service.")
+        st.error("Error contacting prediction service.")
