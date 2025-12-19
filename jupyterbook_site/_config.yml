@@ -1,0 +1,16 @@
+
+title: "Avoidable ED Visits ML Project"
+author: "Bruck Adam"
+
+execute:
+  execute_notebooks: "off"
+
+html:
+  use_issues_button: false
+  use_repository_button: true
+  use_edit_page_button: false
+
+repository:
+  url: "https://github.com/menna1996/avoidable_ed_ml_project"
+  path_to_book: "jupyterbook"
+  branch: "main"

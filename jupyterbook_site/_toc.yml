@@ -1,0 +1,13 @@
+# jupyterbook/_toc.yml
+format: jb-book
+root: index
+
+chapters:
+  - file: project_overview
+  - file: 0_create_database
+  - file: 1_sql_join_to_pandas
+  - file: 2_explore_data
+  - file: 3_experiments
+  - file: 4_final_model
+  - file: experiments
+  - file: deployment
