@@ -47,7 +47,7 @@ def root():
 def predict(data: EDVisitInput):
     try:
         df = pd.DataFrame([data.dict()])
-        print("✅ Received input:", df.to_dict(orient="records")[0])
+        print("Received input:", df.to_dict(orient="records")[0])
 
         df.columns = df.columns.str.strip()
 
@@ -61,9 +61,9 @@ def predict(data: EDVisitInput):
         pred = model.predict(df)[0]
         prob = model.predict_proba(df)[0][1]
 
-        print("✅ Prediction:", pred, "Probability:", prob)
+        print("Prediction:", pred, "Probability:", prob)
         return {"prediction": int(pred), "probability": float(prob)}
 
     except Exception as e:
-        print("❌ Prediction error:", str(e))
+        print("Prediction error:", str(e))
         raise HTTPException(status_code=500, detail="Prediction failed")
